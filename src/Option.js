@@ -1,7 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
+import createClass from 'create-react-class';
 
-const Option = React.createClass({
+const Option = createClass({
 	propTypes: {
 		children: React.PropTypes.node,
 		className: React.PropTypes.string,             // className (based on mouse position)

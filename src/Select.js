@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Input from 'react-input-autosize';
 import classNames from 'classnames';
 import blacklist from 'blacklist';
+import createClass from 'create-react-class';
 
 import stripDiacritics from './utils/stripDiacritics';
 
@@ -25,7 +26,7 @@ const stringOrNode = React.PropTypes.oneOfType([
 
 let instanceId = 1;
 
-const Select = React.createClass({
+const Select = createClass({
 
 	displayName: 'Select',
 

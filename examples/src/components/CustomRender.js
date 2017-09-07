@@ -1,7 +1,8 @@
 import React from 'react';
 import Select from 'react-select';
+import createClass from 'create-react-class';
 
-var DisabledUpsellOptions = React.createClass({
+var DisabledUpsellOptions = createClass({
 	displayName: 'DisabledUpsellOptions',
 	propTypes: {
 		label: React.PropTypes.string,

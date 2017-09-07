@@ -1,11 +1,12 @@
 import React from 'react';
 import Select from 'react-select';
 import Gravatar from 'react-gravatar';
+import createClass from 'create-react-class';
 
 const USERS = require('../data/users');
 const GRAVATAR_SIZE = 15;
 
-const GravatarOption = React.createClass({
+const GravatarOption = createClass({
 	propTypes: {
 		children: React.PropTypes.node,
 		className: React.PropTypes.string,
@@ -50,7 +51,7 @@ const GravatarOption = React.createClass({
 	}
 });
 
-const GravatarValue = React.createClass({
+const GravatarValue = createClass({
 	propTypes: {
 		children: React.PropTypes.node,
 		placeholder: React.PropTypes.string,
@@ -76,7 +77,7 @@ const GravatarValue = React.createClass({
 	}
 });
 
-const UsersField = React.createClass({
+const UsersField = createClass({
 	propTypes: {
 		hint: React.PropTypes.string,
 		label: React.PropTypes.string,

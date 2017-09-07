@@ -20202,24 +20202,25 @@ module.exports = require('react/lib/ReactDOM');
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var React = require('react');
-
+var createReactClass = require('create-react-class');
+var PropTypes = require('prop-types');
 var sizerStyle = { position: 'absolute', top: 0, left: 0, visibility: 'hidden', height: 0, overflow: 'scroll', whiteSpace: 'pre' };
 
-var AutosizeInput = React.createClass({
+var AutosizeInput = createReactClass({
 	displayName: 'AutosizeInput',
 
 	propTypes: {
-		className: React.PropTypes.string, // className for the outer element
-		defaultValue: React.PropTypes.any, // default field value
-		inputClassName: React.PropTypes.string, // className for the input element
-		inputStyle: React.PropTypes.object, // css styles for the input element
-		minWidth: React.PropTypes.oneOfType([// minimum width for input element
-		React.PropTypes.number, React.PropTypes.string]),
-		onChange: React.PropTypes.func, // onChange handler: function(newValue) {}
-		placeholder: React.PropTypes.string, // placeholder text
-		placeholderIsMinWidth: React.PropTypes.bool, // don't collapse size to less than the placeholder
-		style: React.PropTypes.object, // css styles for the outer element
-		value: React.PropTypes.any },
+		className: PropTypes.string, // className for the outer element
+		defaultValue: PropTypes.any, // default field value
+		inputClassName: PropTypes.string, // className for the input element
+		inputStyle: PropTypes.object, // css styles for the input element
+		minWidth: PropTypes.oneOfType([// minimum width for input element
+		PropTypes.number, PropTypes.string]),
+		onChange: PropTypes.func, // onChange handler: function(newValue) {}
+		placeholder: PropTypes.string, // placeholder text
+		placeholderIsMinWidth: PropTypes.bool, // don't collapse size to less than the placeholder
+		style: PropTypes.object, // css styles for the outer element
+		value: PropTypes.any },
 	// field value
 	getDefaultProps: function getDefaultProps() {
 		return {

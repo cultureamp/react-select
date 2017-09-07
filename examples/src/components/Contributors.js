@@ -1,6 +1,7 @@
 import React from 'react';
 import Select from 'react-select';
 import createClass from 'create-react-class';
+import PropTypes from 'prop-types';
 
 const CONTRIBUTORS = require('../data/contributors');
 const MAX_CONTRIBUTORS = 6;
@@ -9,7 +10,7 @@ const ASYNC_DELAY = 500;
 const Contributors = createClass({
 	displayName: 'Contributors',
 	propTypes: {
-		label: React.PropTypes.string,
+		label: PropTypes.string,
 	},
 	getInitialState () {
 		return {

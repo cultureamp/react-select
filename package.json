@@ -14,7 +14,7 @@
     "blacklist": "^1.1.2",
     "classnames": "^2.2.4",
     "prop-types": "^15.5.10",
-    "react-input-autosize": "^1.1.0"
+    "react-input-autosize": "cultureamp/react-input-autosize#99206db5e39c779379b330b74dcf138cf8f2f4b2"
   },
   "devDependencies": {
     "babel": "^5.8.23",

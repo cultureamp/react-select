@@ -13,7 +13,9 @@
   "dependencies": {
     "blacklist": "^1.1.2",
     "classnames": "^2.2.4",
-    "prop-types": "^15.5.10",
+    "prop-types": "^15.5.10"
+  },
+  "peerDependencies": {
     "react-input-autosize": "cultureamp/react-input-autosize#99206db5e39c779379b330b74dcf138cf8f2f4b2"
   },
   "devDependencies": {
